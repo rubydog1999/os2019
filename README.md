@@ -15,8 +15,6 @@ Student Info
 * ID: USTH-BI8-029
 
 =======
-* Name: Nguyen Trung Dung
-* ID: USTH-BI8-029
 >>>>>>> 72bc5cbd29050c326e5da454c8dd292a024cd8b2
 
 
