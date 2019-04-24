@@ -1,0 +1,42 @@
+maca@Dung:$ ls -la |grep list
+drwxrwxr-x  2 maca maca 4096 Apr 24 09:13 list
+drwxrwxr-x  2 maca maca 4096 Apr 24 09:15 listc
+
+maca@Dung:~$  wc -l /etc/passwd
+40 /etc/passwd
+maca@Dung:~$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:           7863        1690        2963         137        3210        5735
+Swap:          2047           0        2047
+
+
+maca@Dung:~$ lscpu
+Architecture:        x86_64
+CPU op-mode(s):      32-bit, 64-bit
+Byte Order:          Little Endian
+CPU(s):              4
+On-line CPU(s) list: 0-3
+Thread(s) per core:  2
+Core(s) per socket:  2
+Socket(s):           1
+NUMA node(s):        1
+Vendor ID:           GenuineIntel
+CPU family:          6
+Model:               78
+Model name:          Intel(R) Core(TM) i5-6300U CPU @ 2.40GHz
+Stepping:            3
+CPU MHz:             703.551
+CPU max MHz:         3000,0000
+CPU min MHz:         400,0000
+BogoMIPS:            4992.00
+Virtualization:      VT-x
+L1d cache:           32K
+L1i cache:           32K
+L2 cache:            256K
+L3 cache:            3072K
+NUMA node0 CPU(s):   0-3
+
+
+maca@Dung:~$ find /home/maca/Pictures -name "*.jpg" | wc -l
+0
+
