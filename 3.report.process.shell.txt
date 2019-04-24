@@ -1,0 +1,77 @@
+maca@Dung:ps -A
+  PID TTY          TIME CMD
+    1 ?        00:00:01 systemd
+    2 ?        00:00:00 kthreadd
+    4 ?        00:00:00 kworker/0:0H
+    6 ?        00:00:00 mm_percpu_wq
+    7 ?        00:00:00 ksoftirqd/0
+    8 ?        00:00:04 rcu_sched
+    9 ?        00:00:00 rcu_bh
+   10 ?        00:00:00 migration/0
+
+
+maca@Dung:~$ ps -a | gnome-calculator
+
+
+
+
+maca@Dung:~$ ps a | grep gnome-calculator 
+ 6786 pts/0    Sl+    0:00 gnome-calculator
+ 6805 pts/1    S+     0:00 grep --color=auto gnome-calculator
+
+
+
+
+maca@Dung:~$  cat /proc/6786/status | head
+Name:	gnome-calculato
+Umask:	0022
+State:	S (sleeping)
+Tgid:	6786
+Ngid:	0
+Pid:	6786
+PPid:	6606
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+
+
+
+
+maca@Dung:~$ kill -STOP 6786
+maca@Dung:~$  cat /proc/6786/status | head
+Name:	gnome-calculato
+Umask:	0022
+State:	T (stopped)
+Tgid:	6786
+Ngid:	0
+Pid:	6786
+PPid:	6606
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+
+
+
+
+mac@Dung:~$ kill -CONT 6786
+maca@Dung:~$  cat /proc/6786/status | head
+Name:	gnome-calculato
+Umask:	0022
+State:	S (sleeping)
+Tgid:	6786
+Ngid:	0
+Pid:	6786
+PPid:	6606
+TracerPid:	0
+Uid:	1000	1000	1000	1000
+Gid:	1000	1000	1000	1000
+
+
+
+maca@Dung:~$  kill -KILL 6786
+maca@Dung:~$  cat /proc/6786/status | head
+cat: /proc/6786/status: No such file or directory
+
+
+
+
