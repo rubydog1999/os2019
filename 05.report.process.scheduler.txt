@@ -1,0 +1,24 @@
+maca@Dung:~$  grep systemd /proc/sched_debug
+ Ssystemd-journal   340        24.511967       683   119         0.000000       207.671509         0.000000 0 0 /autogroup-10
+ Ssystemd-resolve   650        13.150212       269   120         0.000000        98.458176         0.000000 0 0 /autogroup-37
+ Ssystemd-timesyn   649         5.549444        30   120         0.000000        22.282532         0.000000 0 0 /autogroup-36
+ S        systemd     1       301.992178      1667   120         0.000000      1292.180633         0.000000 0 0 /autogroup-2
+ S systemd-logind   689        14.299939       568   120         0.000000        74.344044         0.000000 0 0 /autogroup-48
+ S        systemd  1167        58.591269        97   120         0.000000        55.590832         0.000000 0 0 /autogroup-99
+ S  systemd-udevd   367       604.268503       475   120         0.000000       339.512679         0.000000 0 0 /autogroup-20
+
+
+
+
+maca@Dung:~$ grep switch /proc/1/sched
+nr_switches                                  :                 1667
+nr_voluntary_switches                        :                 1285
+nr_involuntary_switches                      :                  382
+
+
+
+maca@Dung:~$ grep switch /proc/1167/sched
+nr_switches                                  :                   97
+nr_voluntary_switches                        :                   80
+nr_involuntary_switches                      :                   17
+
