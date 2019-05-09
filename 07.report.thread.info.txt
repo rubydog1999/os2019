@@ -7,9 +7,9 @@ maca@Dung:~$ ps -o nlwp 1669
 NLWP
   25
 
-maca@Dung:~$ /proc/1669/tasks| wc -l
-bash: /proc/1669/tasks: No such file or directory
-0
+maca@Dung:~$ ls  /proc/1669/task | wc -l
+25
+
 
 
 
