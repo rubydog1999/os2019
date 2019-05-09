@@ -8,7 +8,7 @@ NLWP
   25
 
 maca@Dung:~$ ls  /proc/1669/task | wc -l
-25
+   25
 
 
 
