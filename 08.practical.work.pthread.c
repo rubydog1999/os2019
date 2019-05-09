@@ -68,7 +68,7 @@ void *consumerThread(void *param){
     cons = consume();
     printf("\nConsumed item %d: %c, %d, %c\n", i, consume->type, consume->amount, consume->unit);
     printf("First: %d, Last: %d\n", first, last);
-  }
+    }
 }
 
 void printLog() {
