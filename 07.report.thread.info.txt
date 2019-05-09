@@ -1,0 +1,15 @@
+maca@Dung:~$ ps aux |grep firefox
+maca      1596  6.5  4.6 2113884 375464 ?      Sl   14:07   2:05 /usr/lib/firefox/firefox
+maca      1669  1.6  2.1 1823180 170224 ?      Sl   14:07   0:30 /usr/lib/firefox/firefox -contentproc -childID 1 -isForBrowser -prefsLen 1 -prefMapSize 172962 -schedulerPrefs 0001,2 -parentBuildID 20181209160329 -greomni /usr/lib/firefox/omni.ja -appomni /usr/lib/firefox/browser/omni.ja -appdir /usr/lib/firefox/browser 1596 true tab
+
+
+maca@Dung:~$ ps -o nlwp 1669
+NLWP
+  25
+
+maca@Dung:~$ /proc/1669/tasks| wc -l
+bash: /proc/1669/tasks: No such file or directory
+0
+
+
+
